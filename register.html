@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exam | Register</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="register">
+  <div class="head">
+      <header><font color=#1346AD size=+3>Register/Create Account</font></header>
+    <hr>
+  </div>
+  <center>
+       <form name="form" >
+        <h4>Contact Information</h4>
+        <div>
+        <input type="text" name="FirstName" id="1" placeholder="First Name">
+        <input type="text" name="LastName" id="2" placeholder="Last Name"> 
+        <input type="text" name="Email" id="3" placeholder="Your Email">
+        <input type="text" name="ReEmail" id="4" placeholder="Re-enter Email">
+        <input type="password" name="Password" id="5" placeholder="New Password">
+        <input type="password" name="RePassword" id="6" placeholder="Confirm Password">
+      </div>
+        <br>
+      <div>
+        <select>
+          <option value="" selected >Month</option>
+          <option value="01">Jan</option>
+          <option value="02">Feb</option>
+          <option value="03">Mar</option>
+          <option value="04">Apr</option>
+          <option value="05">May</option>
+        </select>
+        &nbsp;&nbsp;
+        <select>
+          <option value="" selected>Day</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+        </select>
+        &nbsp;&nbsp;
+        <select>
+          <option value="" selected>Year</option>
+          <option value="1985">1985</option>
+          <option value="1986">1986</option>
+          <option value="1987">1987</option>
+          <option value="1988">1988</option>
+          <option value="1989">1989</option>
+        </select>
+      </div>
+      <br>
+      <div id="radio_button">
+        <input type="radio" name="gender" value="Female">
+        <label >Female</label>
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="gender" value="Male">
+        <label >Male</label>
+      </div>
+      <br>
+       <div>
+        <input type="button" class="btn" onclick="Submit()" value="Create Account"/>
+      </div>
+     </form>
+   </center>
+   <br>
+        <footer><font color=#1346AD size=1>©2015 Copyright & Designed by Sayalee Agashe</font></footer>
+</section>
+<script type="text/javascript">
+  var firstname = document.getElementById("1");
+  var lastname = document.getElementById("2");
+  var email = document.getElementById("3");
+  var reemail = document.getElementById("4");
+  var password = document.getElementById("5");
+  var repassword = document.getElementById("6");
+function Submit(){  
+     if(firstname.value != "" && lastname.value != "" && email.value != "" && reemail.value != "" && password.value != "" && repassword.value != "") {
+   alert("Registered successfully. Please wait for the Confirmation email.");
+   window.open('loginpage.html', '_self', false);
+   }
+   else{alert("Enter all the Information!")}
+}
+</script>
+</body>
+</html>

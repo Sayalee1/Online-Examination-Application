@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exam | Login Page</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="login">
+		<div class="head">
+			<header><font color=#1346AD size=+3>User Login</font></header>
+		<hr>
+	</div>
+		<form action="">
+			<center>
+				<div>
+				<input type="text" placeholder="Username" required="" id="username" />
+			</div>
+			<div>
+				<input type="password" placeholder="Password" required="" id="password" />
+			</div><br>
+			<div>
+				<input type="button" class="btn" onclick="check(this.form)" value="Login"/>
+            	<input type="reset" class="btn" value="Reset"/>
+			</div>
+			<div><font color=#1346AD size=1><u><a href="register.html">Register</a></u>&nbsp;&nbsp;&nbsp;&nbsp;<u><a href="forgot.html">Forgot Password?</a></u>
+				</font></div>
+			</center>
+		</form>
+		</section>
+		<script language="javascript">
+			var user = document.getElementById("username");
+			var password = document.getElementById("password");
+            function check(form) { 
+            	
+                if(user.value == "cmpe280" && password.value == "cmpe280") {
+                    window.open('question1.html', '_self', false);
+                }
+                else {
+                    alert("Wrong Password or Username!"); 
+                }
+            }
+        </script>
+</body>
+</html>

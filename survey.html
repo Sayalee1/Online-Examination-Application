@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exam | Survey</title>
+  <script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+  <div class="content">
+      <div class="head">
+	<header><font color=#1346AD size=+2>Survey</font></header>
+	<hr> 
+</div>
+	<div> <br><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How did you like the center? <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comments:<br> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="comment" cols=100 rows=4 name=textBox1></textarea> <br><br>
+  	</div><br><br>
+    <div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select the Location of the Exam: <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Room Number:
+    &nbsp;&nbsp;<input list="datalist" type="text" id="roomno" />
+    <datalist id="datalist">
+      <select>
+          <option>101</option>
+          <option>215</option>
+          <option>390</option>
+          <option>488</option>
+          <option>497</option>
+      </select>
+    </datalist>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City:
+    &nbsp;&nbsp;&nbsp;&nbsp;<input list="city" name="browser" id="scity">
+        <datalist id="city">
+          <option value="San Jose">
+          <option value="New York">
+          <option value="Boston">
+          <option value="Chicago">
+          <option value="Seattle">
+      </datalist>
+    </div>
+    <br><br><br><br>
+    <div>
+    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" class="btn" onclick="submit5(this.form);store(this.form)" value="Submit & Get Score"/>
+    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" class="btn" onclick="skip5(this.form)" value="Skip & Get Score"/>
+    </div>
+    <br>
+        <footer><font color=#1346AD size=1>©2015 Copyright & Designed by Sayalee Agashe</font></footer>
+  </div>
+  <script type="text/javascript">
+
+      function store(form){
+        var comment = document.getElementById("comment");
+        sessionStorage.setItem("comment", comment.value);
+
+        var roomno = document.getElementById("roomno");
+        sessionStorage.setItem("roomno", roomno.value);
+
+        var scity = document.getElementById("scity");
+        sessionStorage.setItem("scity", scity.value);
+      }
+  </script>
+</body>

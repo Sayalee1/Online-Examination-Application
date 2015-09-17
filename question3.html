@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exam | Reading Section</title>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+	<div class="content">
+	<div class="head">
+	<header><font color=#1346AD size=+2>Question 3</font></header>
+    <progress value="75" max="100">
+    </progress>
+	<hr>
+	</div>
+	<div class="left">
+			<form action="">
+				<p>
+	  			   &nbsp;&nbsp;Read the paragraph and fill in the blanks: <br><br>
+	  				<input type=radio onclick="op1(this.form)" name="Source3" value="Correct" id="9" data-three="1">Banana, England<br> 
+      				<input type=radio onclick="op2(this.form)" name="Source3" value="Incorrect" id="10" data-three="0">Apple, USA<br> 
+      				<input type=radio onclick="op3(this.form)" name="Source3" value="Incorrect" id="11" data-three="0">Kiwi, England<br> 
+     				<input type=radio onclick="op4(this.form)" name="Source3" value="Incorrect" id="12" data-three="0">Mango, India<br> 
+    			</p>
+                </form>
+                <br><br>
+    			<p>
+				<input type="button" class="btn" onclick="submit3(this.form);attempt3(this.form);correct3(this.form);" value="Submit & Next Question"/> 
+                <input type="button" class="btn" onclick="skip3(this.form);attempt3(this.form);correct3(this.form);" value="Skip & Next Question"/>
+				<input type="button" class="btn" onclick="replace3(this.form);reset3(this.form)" value="Clear & Reselect"/>
+				</p>
+			
+	</div>
+	<br>
+				<footer><font color=#1346AD size=1>©2015 Copyright & Designed by Sayalee Agashe</font></footer>
+	<div class="right">
+		<p id="p0">"The evolution of the banana, star of the Western fruit bowl" By Rosie Mestel</p>
+		<p id="p1">Did you hear? The genome of the banana has been sequenced, an important development in scientist's efforts to produce better <mark> <span id="mark1">__</span></mark>.
+		</p>
+		<p id="p2">A look at that genome has revealed curious things, said Pat Heslop-Harrison, a plant geneticist at the University of Leicester in <mark> <span id="mark2">__</span></mark> who was a coauthor of the report published this week in the journal Nature.
+		</p>
+	</div>
+</div>
+</body>

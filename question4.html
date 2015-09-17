@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exam | Audio/Video Section</title>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+	<div class="content">
+	<div class="head">
+	<header><font color=#1346AD size=+2>Question 4</font></header>
+	<progress value="100" max="100">
+	</progress>
+	<hr>
+	</div>
+		<div class="right">
+			<video width="500" src="google.mp4" controls preload ></video>
+		</div>
+		<div class="left">
+			<form>
+				<p>
+	  			  &nbsp;&nbsp;Watch the video carefully and select the correct source of the video: <br><br>
+	  				<input type=radio name="Source4" value="Incorrect" id="13" data-four="0">Amazon<br> 
+      				<input type=radio name="Source4" value="Incorrect" id="14" data-four="0">Tesla Motors<br> 
+      				<input type=radio name="Source4" value="Incorrect" id="15" data-four="0">Facebook<br> 
+     				<input type=radio name="Source4" value="Correct" id="16" data-four="1">Google<br> 
+    			</p>
+    			</form>
+    			<p>
+				<input type="button" class="btn" onclick="submit4(this.form);attempt4(this.form);correct4(this.form);" value="Submit & Next Question"/>
+				<input type="button" class="btn" onclick="skip4(this.form);attempt4(this.form);correct4(this.form);" value="Skip & Finish Exam"/> 
+				<input type="button" class="btn" onclick="reset4(this.form)" value="Clear & Reselect"/>
+				</p>			
+	</div>
+		<footer><font color=#1346AD size=1>©2015 Copyright & Designed by Sayalee Agashe</font></footer>
+	</div>
+</body>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exam | Quantative Section</title>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+	<div class="content">
+	<div class="head">
+	<header style="text-align: center"><font color=#1346AD size=+2>Question 1</font></header>
+	<progress value="25" max="100">
+	</progress>
+	<hr>
+	</div>
+	<div class="right">
+  		<svg height="500" width="500"  viewPort="0 0 120 120" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+  			<defs>
+        		<marker id="Graph"
+                viewBox="0 0 10 10" 
+                refX="1" refY="5"
+                markerWidth="3" 
+                markerHeight="3"
+                orient="auto">
+           			 <path d="M 0 0 L 10 5 L 0 10 z" />
+	    		</marker>
+    		</defs>
+  			<g stroke="black" >
+    				<line x1="100" y1="400" x2="100" y2="100" stroke-width="3" marker-end="url(#Graph)"  />
+    				<line x1="100" y1="400" x2="400" y2="400" stroke-width="3" marker-end="url(#Graph)" />
+    				<line x1="100" y1="400" x2="400" y2="100" stroke-width="2"  />
+ 			 </g>
+ 			 <circle cx="200" cy="300" r="5" fill="red"value="x1,y1" />
+ 			 <circle cx="300" cy="200" r="5" fill="red" />
+ 			 <text x="180" y="270" fill="black">(x1,y1)</text>
+ 			 <text x="270" y="180" fill="black">(x2,y2)</text>
+		</svg>
+	</div>
+	<div class="left">
+				<form action="">
+				<p>
+					&nbsp;&nbsp;Given points (x1,y1) and (x2,y2) select the formula to find the quotient of the given line:<br>
+	  				<input type="radio" name="Source1" value="Incorrect" id="1" data-one="0">
+	  					<math xmlns="http://www.w3.org/1998/Math/MathML" display='block'>
+						<mi>y</mi>
+						<mo>=</mo>
+						<mrow>
+							<mi>m</mi>
+							<mi>x</mi>
+						</mrow>
+						<mo>&plus;</mo>
+						<mi>b</mi>
+					</math>
+	  				<input type="radio" name="Source1" value="Correct" id="2" data-one="1">
+      					<math xmlns="http://www.w3.org/1998/Math/MathML" display='block'>
+						<mrow>
+							<mi>y</mi>
+							<mo>&minus;</mo>
+							<mi>y1</mi>
+						</mrow>
+						<mo>=</mo>
+						<mrow>
+							<mi>m</mi>
+							<mrow>
+								<mo>(</mo>
+									<mi>x</mi>
+									<mo>&minus;</mo>
+									<mi>x1</mi>
+								<mo>)</mo>
+							</mrow>
+						</mrow>
+						</math>
+      				<input type="radio" name="Source1" value="Incorrect" id="3" data-one="0">
+	  					<math xmlns="http://www.w3.org/1998/Math/MathML" display='block'>
+						<mrow>
+							<msup>
+    							<mrow>
+      							<mo>(</mo>
+        						<mrow>
+          							<mi>x</mi>
+          							<mo>&minus;</mo>
+          							<mi>h</mi>
+        						</mrow>
+      							<mo>)</mo>
+    							</mrow>
+   								<mn>2</mn>
+  							</msup>
+  							<mo>&plus;</mo>
+  							<msup>
+    							<mrow>
+      							<mo>(</mo>
+        						<mrow>
+          							<mi>y</mi>
+          							<mo>&minus;</mo>
+          							<mi>k</mi>
+        						</mrow>
+      							<mo>)</mo>
+    							</mrow>
+   								<mn>2</mn>
+  							</msup>
+						</mrow>
+						<mo>=</mo>
+						<msup>
+    						<mi>r</mi>
+    						<mn>2</mn>
+  						</msup>
+					</math>
+	  				<input type="radio" name="Source1" value="Incorrect" id="4" data-one="0">
+      					<math xmlns="http://www.w3.org/1998/Math/MathML" display='block'>
+						<mrow>
+							<mi>y</mi>
+							<mo>&minus;</mo>
+							<mi>y2</mi>
+						</mrow>
+						<mo>=</mo>
+						<mrow>
+							<mrow>
+								<mfrac>
+									<mrow>
+										<mi>y2</mi>
+										<mo>&minus;</mo>
+										<mi>y1</mi>
+									</mrow>
+									<mrow>
+										<mi>x2</mi>
+										<mo>&minus;</mo>
+										<mi>x1</mi>
+									</mrow>
+								</mfrac>
+							</mrow>
+							<mrow>
+								<mo>(</mo>
+									<mi>x</mi>
+									<mo>&minus;</mo>
+									<mi>x2</mi>
+								<mo>)</mo>
+							</mrow>
+						</mrow>
+						</math>
+      				</li>  
+    			</p>
+    			</div>
+    			<center>
+				<input type="button" class="btn" onclick="submit1(this.form);attempt1(this.form);correct1(this.form);" value="Submit & Next Question"/> 
+				<input type="button" class="btn" onclick="skip1(this.form);attempt1(this.form);correct1(this.form)" value="Skip & Next Question"/>
+				<input type="button" class="btn" onclick="reset1(this.form)" value="Clear & Reselect"/>
+				</center>
+				</form><br>
+				<footer><font color=#1346AD size=1>©2015 Copyright & Designed by Sayalee Agashe</font></footer>
+			</div>
+</body>
+</html>

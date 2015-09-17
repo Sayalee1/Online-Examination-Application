@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exam | Forgot Password</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+	<div class="login">
+	<div class="head">
+	<header><font color=#1346AD size=+2>Forgot Password</font></header>
+	<hr>
+	</div>
+	<br>
+	<center>
+	<div>
+		<input type="text" name="Email" id="3" placeholder="Your Email">
+        <input type="text" name="ReEmail" id="4" placeholder="Re-enter Email">
+	</div>
+	<br>
+	 <div>
+        <input type="button" class="btn" onclick="Submit()" value="Submit Request"/>
+      </div>
+      </center>
+      <br>
+        <footer><font color=#1346AD size=1>©2015 Copyright & Designed by Sayalee Agashe</font></footer>
+    </div>
+	<script type="text/javascript">
+	var email = document.getElementById("3");
+  	var reemail = document.getElementById("4");
+		function Submit(){   
+			if(email.value != "" && reemail.value != ""){
+   			alert("Request is submitted successfully. Please wait for the password reset email.");
+   			window.open('loginpage.html', '_self', false);}
+   			else {alert(Enter & Confirm your registered email id.)}
+   
+}
+	</script>
+</body>
